@@ -1,25 +1,21 @@
 const express = require('express')
+const ejs = require('ejs')
 const app = express()
 const port = 3000
 
+app.set('view engine', 'ejs')
+app.set('views', './views')
+
 app.get('/', (req, res) => {
-    console.log('Got a GET request from Client')
-    res.send('Got a response from Server')
+    res.render('index');
 })
 
-app.post('/', (req, res) => {
-    console.log('Got a POST request from Client')
-    res.send('Got a response from Server') 
+app.get('/blog', (req, res) => {
+    res.render('blog');
 })
 
-app.put('/user', (req, res) => {
-    console.log('Got a PUT request from Client')
-    res.send('Got a response from Server')
-})
-
-app.delete('/user', (req, res) => {
-    console.log('Got a DELETE request from Client')
-    res.send('Got a response from Server')
+app.get('/users', (req, res) => {
+    res.render('users');
 })
 
 app.listen(port, () => {
