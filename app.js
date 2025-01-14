@@ -2,24 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-    console.log('Got a GET request from Client')
-    res.send('Got a response from Server')
-})
+app.post('/api/contact', (req, res) => {
+    const name = req.body.name;
+    const phone = req.body.phone;
+    const email = req.body.email;
+    const memo = req.body.memo;
 
-app.post('/', (req, res) => {
-    console.log('Got a POST request from Client')
-    res.send('Got a response from Server') 
-})
+    const data = `${name} ${phone} ${email} ${memo}`
 
-app.put('/user', (req, res) => {
-    console.log('Got a PUT request from Client')
-    res.send('Got a response from Server')
-})
-
-app.delete('/user', (req, res) => {
-    console.log('Got a DELETE request from Client')
-    res.send('Got a response from Server')
+    res.send(data) 
 })
 
 app.listen(port, () => {
