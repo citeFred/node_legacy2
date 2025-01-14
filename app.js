@@ -18,6 +18,7 @@ app.get('/blog', (req, res) => {
 
 app.get('/users', (req, res) => {
     res.render('users');
+})
 
 app.post('/api/contact', (req, res) => {
     const name = req.body.name;
