@@ -26,17 +26,48 @@
             <td><%=item.create_at%></td>
             <td><%=item.modify_at%></td>
             <td>
-                <form action="/api/contactUpdate/<%=item.id%>" method="post">
-                    <button type="submit" onclick="return confirm('메모를 확인하셨습니까?')"> UPDATE </button>
-                </form>
+                <button type="button" onclick="updateContact(<%=item.id%>)"> UPDATE </button>
             </td>
             <td>
-                <form action="/api/contactDelete/<%=item.id%>" method="post">
-                    <button type="submit" onclick="return confirm('정말 삭제하시겠습니까?')"> DELETE </button>
-                </form>
+                <button type="button" onclick="deleteContact(<%=item.id%>)"> DELETE </button>
             </td>
         </tr>
         <% }) %>
     </table>
+
+    <script>
+        function updateContact(contactId) {
+            // AJAX를 사용하여 PUT 요청 보내기
+            $.ajax({
+                url: `/api/contactUpdate/${contactId}`,
+                type: 'PUT',
+                success: function(response) {
+                    // 수정 성공 시
+                    alert("문의사항의 상태가 변경되었습니다.")
+                    location.reload()
+                },
+                error: function(error) {
+                    // 오류 처리
+                    console.error("업데이트 오류: ", error)
+                }
+            })
+        }
+
+        function deleteContact(contactId) {
+            $.ajax({
+                url: `/api/contactDelete/${contactId}`,
+                type: 'DELETE',
+                success: function(response) {
+                    // 수정 성공 시
+                    alert("문의사항이 삭제되었습니다.")
+                    location.reload()
+                },
+                error: function(error) {
+                    // 오류 처리
+                    console.error("삭제 오류: ", error)
+                }
+            })
+        }
+    </script>
 
 <%-include('layouts/footer.ejs')%>
