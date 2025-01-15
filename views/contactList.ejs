@@ -9,8 +9,10 @@
             <th>phone</th>
             <th>email</th>
             <th>memo</th>
+            <th>status</th>
             <th>create_at</th>
             <th>modify_at</th>
+            <th>UPDATE</th>
             <th>DELETE</th>
         </tr>
         <% lists.forEach(function(item) { %> 
@@ -20,8 +22,14 @@
             <td><%=item.phone%></td>
             <td><%=item.email%></td>
             <td><%=item.memo%></td>
+            <td><%=item.status%></td>
             <td><%=item.create_at%></td>
             <td><%=item.modify_at%></td>
+            <td>
+                <form action="/api/contactUpdate/<%=item.id%>" method="post">
+                    <button type="submit" onclick="return confirm('메모를 확인하셨습니까?')"> UPDATE </button>
+                </form>
+            </td>
             <td>
                 <form action="/api/contactDelete/<%=item.id%>" method="post">
                     <button type="submit" onclick="return confirm('정말 삭제하시겠습니까?')"> DELETE </button>
