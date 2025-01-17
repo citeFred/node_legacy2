@@ -7,9 +7,13 @@ const apiController = require('../controllers/apiController')
 // 메인 뷰페이지 반환
 router.get('/', viewController.getIndexViewPage);
 
+// 뷰페이지+데이터 반환(ModelAndView) (데이터+뷰페이지 렌더링까지 필요한 경우)
+router.get('/contactList', viewController.getContactListViewPageWithData);
+
+
 
 /* route to api controllers */
-// 문의사항 목록 조회
+// 문의사항 목록 조회(데이터만 필요한 경우)
 router.get('/api/contact/', apiController.getContacts)
 
 // 문의사항 데이터 삽입

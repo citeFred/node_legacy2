@@ -26,14 +26,10 @@
             <td><%=item.create_at%></td>
             <td><%=item.modify_at%></td>
             <td>
-                <form action="/api/contactUpdate/<%=item.id%>" method="post">
-                    <button type="submit" onclick="return confirm('메모를 확인하셨습니까?')"> UPDATE </button>
-                </form>
+                <button type="button" onclick="updateContact(<%= item.id %>)">UPDATE</button>
             </td>
             <td>
-                <form action="/api/contactDelete/<%=item.id%>" method="post">
-                    <button type="submit" onclick="return confirm('정말 삭제하시겠습니까?')"> DELETE </button>
-                </form>
+                <button type="button" onclick="deleteContact(<%= item.id %>)">DELETE</button>
             </td>
         </tr>
         <% }) %>
