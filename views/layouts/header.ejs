@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>citeFred's PR Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
-
-<body>
-    <h1> 저의 홈페이지 </h1>
-    <header style="border-bottom: 1px solid lightgray; margin-bottom: 10px; padding-bottom: 10px;">
-        <nav>
-            <a href="/">홈</a>
-            <a href="/profile">프로필</a>
-            <a href="/visit">찾아오시는길</a>
-            <a href="/blog">블로그</a>
-            <a href="/users">회원</a>
-            <a href="/contact">문의하기</a>
-            <a href="/contactList">문의목록보기</a>
-        </nav>
-    </header>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">HOME</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#strength">STRENGTH</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#promise">PROMISE</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="jumbotron text-center">
+        <h1>citeFred's Personal Branding</h1> 
+        <p>To become a web development specialist</p> 
+        <!-- <form>
+          <div class="input-group">
+            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-danger">Subscribe</button>
+            </div>
+          </div>
+        </form> -->
+      </div>

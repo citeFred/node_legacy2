@@ -1,6 +1,234 @@
 <%-include('layouts/header.ejs')%>
 
-    <h2>메인페이지 입니다.</h2>
-    <img src="img/image_sample.jpg">
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8"><img src="img/avatar.png" width="100" height="100">
+      <h2>About Me</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button class="btn btn-default btn-lg">Get in Profile</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div id="value" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>My Values</h2><br>
+      <h4><strong>MISSION:</strong> My mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> My vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Strengths Section) -->
+<div id="strength" class="container-fluid text-center">
+  <h2>STRENGTH</h2>
+  <h4>What I am good at</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What I have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/deer-8463729_1280.png" alt="Space" width="400" height="300" object-fit="cover">
+        <p><strong>Space</strong></p>
+        <p>Yes, I built this</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/nature-8280318_1280.png" alt="Building" width="400" height="300" object-fit="cover">
+        <p><strong>Building</strong></p>
+        <p>One of my best</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/trees-8463651_1280.png" alt="Sky" width="400" height="300" object-fit="cover">
+        <p><strong>Sky</strong></p>
+        <p>It was challenging</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What my friends say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This man is the best. I am so happy with the result!"<br><span>Michael Jordan, NBA player, Chicago Bulls</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Robert Downey Jr., Iron man, Marvel Universe</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this guy?"<br><span>Lee Jung-jae, Squid Pro-gamer, Netflix</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Promise Section) -->
+<div id="promise" class="container-fluid">
+  <div class="text-center">
+    <h2>Promise</h2>
+    <h4>I'm going to keep doing these things</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>TRY</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Steady</strong> Progress</p>
+          <p><strong>Constructive</strong> Feedback</p>
+          <p><strong>Inspiring</strong> Explore</p>
+          <p><strong>Motivating</strong> Challenge</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Solving problems</h3>
+          <h4>wisely</h4>
+          <!-- <button class="btn btn-lg">Sign Up</button> -->
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>TALK</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Collaborative</strong> Discussion</p>
+          <p><strong>Friendly</strong> Conversation</p>
+          <p><strong>Humble</strong> Attitude</p>
+          <p><strong>Positive</strong> Interaction</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Be considerate</h3>
+          <h4>in communication</h4>
+          <!-- <button class="btn btn-lg">Sign Up</button> -->
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>GROWTH</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>Meaningful</strong> Endeavor</p>
+          <p><strong>Relentless</strong> Pursuit</p>
+          <p><strong>Passionate</strong> Venture</p>
+          <p><strong>Successful</strong> Attempt</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Become a better me</h3>
+          <h4>than yesterday</h4>
+          <!-- <button class="btn btn-lg">Sign Up</button> -->
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact down below and I'll get back to you soon.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Gyeonggi-do, Namyangju</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +082 10-2872-5915</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> citefred@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <form id="contactForm">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="phone" name="phone" placeholder="PhoneNumber(Optional)" type="tel">
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="memo" placeholder="Comment any notes.." rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="button" onclick="createContact()">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <%-include('layouts/footer.ejs')%>
